@@ -56,7 +56,6 @@ class _MyHomePageState extends State<MyHomePage> {
         (timer) {
           setState(() {
             _millisecond += 1;
-
             if (_millisecond >= 1000) {
               _millisecond = 0;
               _second++;
@@ -108,6 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
       _isRunning = false;
     });
   }
+
 //widget
   @override
   Widget build(BuildContext context) {
